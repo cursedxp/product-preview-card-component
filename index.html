@@ -59,21 +59,19 @@
         gap: 16px;
       }
       .wrapper {
-        height: 100vh;
+        min-height: 100vh;
       }
       .card {
+        max-width: 600px;
         background-color: hsl(0, 0%, 100%);
         border-radius: 12px;
       }
       .product-details {
         padding: 24px;
       }
-      .product-image {
-        background-image: url("./images/image-product-desktop.jpg");
-        background-size: cover;
-      }
       .product-type {
         letter-spacing: 4px;
+        font-size: 12px;
         text-transform: uppercase;
       }
       .product-name {
@@ -116,24 +114,42 @@
         color: hsl(0, 0%, 100%);
         background-color: hsl(158, 36%, 37%);
       }
+      button:hover {
+        cursor: pointer;
+        background-color: hsl(158, 36%, 22%);
+      }
 
       @media screen and (max-width: 375px) {
         .card {
           margin: 24px 16px 24px 16px;
-          min-width: 343px;
+          flex-wrap: wrap;
         }
         .product-image {
           background-image: url("./images/image-product-mobile.jpg");
+          background-size: cover;
           width: 100%;
           height: 240px;
           border-radius: 12px 12px 0px 0px;
+        }
+      }
+
+      @media screen and (min-width: 376px) and (max-width: 1440px) {
+        .product-image {
+          background-image: url("./images/image-product-desktop.jpg");
+          background-size: cover;
+          background-position: center;
+          width: 50%;
+          border-radius: 12px 0px 0px 12px;
+        }
+        .product-details {
+          width: 50%;
         }
       }
     </style>
   </head>
   <body>
     <main class="wrapper flex justify-center items-center">
-      <div class="card flex flex-wrap">
+      <div class="card flex">
         <div class="product-image"></div>
         <div class="product-details flex column gap-2">
           <div class="product-type">Perfume</div>
