@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img src='https://github.com/cursedxp/product-preview-card-component/blob/main/screenshot.png'style='width:662px; height:460px;'/>
+<img src='https://github.com/cursedxp/product-preview-card-component/blob/main/screenshot.png' style='width:662px; height:460px;'/>
 
 ### Links
 
